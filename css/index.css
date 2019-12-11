@@ -158,9 +158,9 @@ body {
 }
 .about-header {
   display: flex;
-  margin: 4rem 4rem;
+  margin: 5rem 5rem;
   border-bottom: 1px solid #e06b28;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 .about-header .image-header img,
 .about-header text-header {
@@ -170,6 +170,7 @@ body {
   font-size: 3rem;
   margin-bottom: 3rem;
   text-align: center;
+  text-decoration: underline;
 }
 .about-header h1:hover {
   color: #e06b28;
@@ -177,5 +178,31 @@ body {
 }
 .about-header .text-header p {
   line-height: 1.5;
+  text-align: center;
+}
+.sectionTwo {
+  display: flex;
+  justify-content: center;
+}
+.sectionTwo .port-header h2,
+.sectionTwo .skills h2 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+.sectionTwo .port-header h2:hover,
+.sectionTwo .skills h2:hover {
+  color: #e06b28;
+  font-size: 30px;
+}
+.projects {
+  margin: 2rem 0;
+  padding-right: 4rem;
+  border-right: 1px solid #e06b28;
+}
+.projects .icon {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.projects .text {
   text-align: center;
 }
