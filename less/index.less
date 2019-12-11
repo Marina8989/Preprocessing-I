@@ -110,7 +110,7 @@ section {
 
 body {
 	line-height: 1;
-	max-width: 100%;
+
 }
 
 ol,
@@ -145,3 +145,90 @@ html,
 body {
 	height: 100%;
 }
+
+// My code starts here
+//variables
+@navBannerColor: rgba(0, 4, 8, 0.7);
+@font-face: 'Amatic SC', cursive;
+
+//mixins
+.linkDecoration() {
+	text-decoration: none;
+	color: white;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.linkOnHover() {
+	color: #e06b28;
+	font-size: 30px;
+}
+
+.bordered() {
+	border-bottom: 1px solid #e06b28;
+}
+
+//Navigation
+
+.nav-list {
+
+	height: 6rem;
+	background: @navBannerColor;
+
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+
+		a {
+			padding-top: 2.7rem;
+			.linkDecoration();
+			font-family: @font-face;
+		}
+
+		//this closes a tags
+		a:hover {
+			.linkOnHover();
+		}
+	}
+
+	//closes nav
+	//this closes the nav 
+}
+
+//this closes nav-list
+
+
+//About Section
+.about-header {
+	display: flex;
+	margin: 4rem 4rem;
+	.bordered();
+	padding-bottom: 4rem;
+
+
+	.image-header img,
+	text-header {
+		margin-right: 2rem;
+	}
+
+	.text-header h1 {
+		font-size: 3rem;
+		margin-bottom: 3rem;
+		text-align: center;
+
+	}
+
+	h1:hover {
+		.linkOnHover();
+	}
+
+	.text-header p {
+		line-height: 1.5;
+		text-align: center;
+	}
+}
+
+//closes section .about-header
