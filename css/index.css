@@ -182,27 +182,30 @@ body {
 }
 .sectionTwo {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 .sectionTwo .port-header h2,
 .sectionTwo .skills h2 {
   font-size: 25px;
   text-decoration: underline;
+  width: 10rem;
+  padding-left: 5rem;
 }
 .sectionTwo .port-header h2:hover,
 .sectionTwo .skills h2:hover {
   color: #e06b28;
   font-size: 30px;
 }
-.projects {
+.port-header .projects {
   margin: 2rem 0;
-  padding-right: 4rem;
+  padding-right: 8rem;
   border-right: 1px solid #e06b28;
+  margin-left: 5rem;
 }
-.projects .icon {
+.port-header .projects .icon {
   padding: 0.5rem 0;
   text-align: center;
 }
-.projects .text {
+.port-header .projects .text {
   text-align: center;
 }
