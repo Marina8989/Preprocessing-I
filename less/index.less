@@ -146,6 +146,10 @@ body {
 	height: 100%;
 }
 
+body {
+	margin: 2rem;
+}
+
 // My code starts here
 //variables
 @navBannerColor: rgba(0, 4, 8, 0.7);
@@ -214,11 +218,16 @@ body {
 	.bordered();
 	padding-bottom: 5rem;
 
+	@media (max-width: 500px) {
+		flex-direction: row;
+	}
 
 	.image-header img,
 	text-header {
 		margin-right: 2rem;
 	}
+
+
 
 	.text-header h1 {
 		font-size: 3rem;
@@ -245,14 +254,17 @@ body {
 .sectionTwo {
 	display: flex;
 	justify-content: start;
-	//width: 70rem;
+	width: 70rem;
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+
 
 
 	.port-header h2,
 	.skills h2 {
 		.header2();
 		width: 10rem;
-		padding-left: 5rem;
+		padding-left: 7rem;
 	}
 
 	.port-header h2:hover,
@@ -264,16 +276,85 @@ body {
 
 .port-header .projects {
 	margin: 2rem 0;
-	padding-right: 8rem;
+	padding-right: 12rem;
 	border-right: 1px solid #e06b28;
 	margin-left: 5rem;
 
 	.icon {
 		padding: .5rem 0;
 		text-align: center;
+		font-size: 27px;
+
+		a {
+			color: #e06b28;
+		}
 	}
 
 	.text {
 		text-align: center;
+
+		h3 {
+			font-size: 19px;
+			font-weight: bold;
+			padding-bottom: 12px;
+		}
 	}
+
+
+
+}
+
+.list {
+	text-align: center;
+
+	li {
+		padding: 1rem;
+		padding-left: 15rem;
+	}
+
+	li:hover {
+		.linkOnHover();
+	}
+}
+
+
+.contact {
+	background: @navBannerColor;
+	margin: 2rem 0;
+	padding: 3rem 0;
+	color: white;
+
+	h2 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	h2:hover {
+		.linkOnHover();
+	}
+
+	.btn {
+		text-align: center;
+	}
+
+	form {
+		text-align: center;
+		padding-top: 2rem;
+
+	}
+
+}
+
+.copy {
+	text-align: center;
+
+	.fas {
+		color: red;
+	}
+}
+
+.cool-btn {
+	text-decoration: none;
+
+
 }
