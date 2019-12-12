@@ -144,10 +144,12 @@ table {
 html,
 body {
 	height: 100%;
+
 }
 
 body {
 	margin: 2rem;
+
 }
 
 // My code starts here
@@ -185,6 +187,11 @@ body {
 	height: 6rem;
 	background: @navBannerColor;
 
+	@media (max-width: 500px) {
+		text-align: center;
+		margin-right: -2rem;
+	}
+
 
 	nav {
 		display: flex;
@@ -218,15 +225,18 @@ body {
 	.bordered();
 	padding-bottom: 5rem;
 
+
 	@media (max-width: 500px) {
-		flex-direction: row;
+		.image-header {
+			display: none;
+		}
 	}
 
 	.image-header img,
 	text-header {
 		margin-right: 2rem;
-	}
 
+	}
 
 
 	.text-header h1 {
@@ -258,7 +268,12 @@ body {
 	padding-top: 3rem;
 	padding-bottom: 4rem;
 
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
 
+	}
 
 	.port-header h2,
 	.skills h2 {
@@ -280,25 +295,29 @@ body {
 	border-right: 1px solid #e06b28;
 	margin-left: 5rem;
 
-	.icon {
-		padding: .5rem 0;
-		text-align: center;
-		font-size: 27px;
 
-		a {
-			color: #e06b28;
-		}
+
+}
+
+.icon {
+	padding: .5rem 0;
+	text-align: center;
+	font-size: 27px;
+
+	a {
+		color: #e06b28;
 	}
+}
 
-	.text {
-		text-align: center;
+.text {
+	text-align: center;
 
-		h3 {
-			font-size: 19px;
-			font-weight: bold;
-			padding-bottom: 12px;
-		}
+	h3 {
+		font-size: 19px;
+		font-weight: bold;
+		padding-bottom: 12px;
 	}
+}
 
 
 
@@ -323,6 +342,10 @@ body {
 	margin: 2rem 0;
 	padding: 3rem 0;
 	color: white;
+
+	@media (max-width: 500px) {
+		margin-right: -2rem;
+	}
 
 	h2 {
 		font-size: 30px;

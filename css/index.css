@@ -141,6 +141,12 @@ body {
   height: 6rem;
   background: rgba(0, 4, 8, 0.7);
 }
+@media (max-width: 500px) {
+  .nav-list {
+    text-align: center;
+    margin-right: -2rem;
+  }
+}
 .nav-list nav {
   display: flex;
   justify-content: space-around;
@@ -166,8 +172,8 @@ body {
   padding-bottom: 5rem;
 }
 @media (max-width: 500px) {
-  .about-header {
-    flex-direction: row;
+  .about-header .image-header {
+    display: none;
   }
 }
 .about-header .image-header img,
@@ -195,6 +201,13 @@ body {
   padding-top: 3rem;
   padding-bottom: 4rem;
 }
+@media (max-width: 500px) {
+  .sectionTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
 .sectionTwo .port-header h2,
 .sectionTwo .skills h2 {
   font-size: 25px;
@@ -212,6 +225,11 @@ body {
   padding-right: 12rem;
   border-right: 1px solid #e06b28;
   margin-left: 5rem;
+}
+@media (max-width: 500px) {
+  .port-header .projects .projects .icon .text {
+    width: -15%;
+  }
 }
 .port-header .projects .icon {
   padding: 0.5rem 0;
